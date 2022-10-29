@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Leoamarilha/Swag-Automation---GUI-Commands/issues"
   },
-  "homepage": "https://github.com/Leoamarilha/Swag-Automation---GUI-Commands#readme"
+  "homepage": "https://github.com/Leoamarilha/Swag-Automation---GUI-Commands#readme",
+  "devDependencies": {
+    "cypress": "^10.11.0"
+  }
 }

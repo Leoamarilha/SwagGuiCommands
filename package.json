@@ -1,0 +1,19 @@
+{
+  "name": "swag-automation-gui-commands",
+  "version": "1.0.0",
+  "description": "Automation Using GUI Commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leoamarilha/Swag-Automation---GUI-Commands.git"
+  },
+  "author": "Leandro Amarilha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leoamarilha/Swag-Automation---GUI-Commands/issues"
+  },
+  "homepage": "https://github.com/Leoamarilha/Swag-Automation---GUI-Commands#readme"
+}

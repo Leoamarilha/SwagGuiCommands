@@ -41,5 +41,8 @@ Cypress.Commands.add('login', (email, senha) => {
         cy.get('#login-button').click()
     }
 
+});
+
+Cypress.Commands.add('adicionarNoCarrinho', () => {
 
 });

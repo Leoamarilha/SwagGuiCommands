@@ -43,6 +43,29 @@ Cypress.Commands.add('login', (email, senha) => {
 
 });
 
+Cypress.Commands.add('validaLogin', (alert) => {
+    switch(alert){
+        case 'Epic sadface: Username and password do not match any user in this service':
+            cy.get('[data-test="error"]').should('contain.text', alert);
+            break;
+        
+        case 'Epic sadface: Username is required':
+            cy.get('[data-test="error"]').should('contain.text', alert);
+            break;
+        
+        case 'Epic sadface: Password is required':
+            cy.get('[data-test="error"]').should('contain.text', alert);
+            break;
+        
+        case 'Epic sadface: Sorry, this user has been locked out.':
+            cy.get('[data-test="error"]').should('contain.text', alert);
+            break;
+
+        default:
+            cy.get('.shopping_cart_link').should('be.visible');
+    }
+})
+
 Cypress.Commands.add('adicionarNoCarrinho', () => {
 
 });

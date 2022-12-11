@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Leoamarilha/Swag-Automation---GUI-Commands#readme",
   "devDependencies": {
-    "cypress": "^10.11.0"
+    "cypress": "^12.0.2"
   }
 }

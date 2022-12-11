@@ -14,7 +14,7 @@ describe('Logar na aplicação e validar as excessões', () => {
     let senha = 'secret_sauce'
 
     cy.login(email, senha);
-    cy.get('.shopping_cart_link').should('be.visible');
+    cy.validaLogin();
 
   });
 
@@ -25,7 +25,7 @@ describe('Logar na aplicação e validar as excessões', () => {
     let alert = 'Epic sadface: Username and password do not match any user in this service'
 
     cy.login(email, senha);
-    cy.get('[data-test="error"]').should('contain.text', alert);
+    cy.validaLogin(alert)
 
   });
 
@@ -36,7 +36,7 @@ describe('Logar na aplicação e validar as excessões', () => {
     let alert = 'Epic sadface: Username is required'
 
     cy.login(email, senha);
-    cy.get('[data-test="error"]').should('contain.text', alert);
+    cy.validaLogin(alert)
 
   });
 
@@ -47,7 +47,7 @@ describe('Logar na aplicação e validar as excessões', () => {
     let alert = 'Epic sadface: Password is required'
 
     cy.login(email, senha);
-    cy.get('[data-test="error"]').should('contain.text', alert);
+    cy.validaLogin(alert)
 
   });
 
@@ -58,7 +58,7 @@ describe('Logar na aplicação e validar as excessões', () => {
     let alert = 'Epic sadface: Sorry, this user has been locked out.'
 
     cy.login(email, senha);
-    cy.get('[data-test="error"]').should('contain.text', alert);
+    cy.validaLogin(alert)
 
   });
 

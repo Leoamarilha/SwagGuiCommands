@@ -65,7 +65,3 @@ Cypress.Commands.add('validaLogin', (alert) => {
             cy.get('.shopping_cart_link').should('be.visible');
     }
 })
-
-Cypress.Commands.add('adicionarNoCarrinho', () => {
-
-});
